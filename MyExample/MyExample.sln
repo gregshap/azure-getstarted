@@ -5,6 +5,17 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyExample", "MyExample\MyExample.csproj", "{273A5D47-AA1F-4F22-B777-739B342ED8A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{4AA5F741-E48E-4DAF-BF15-4526EB0FD2ED}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{9C084C86-E03F-46D3-82FC-B557D7232CF7}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\MyExample-WAWS-dev.json = PublishScripts\Configurations\MyExample-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +29,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9C084C86-E03F-46D3-82FC-B557D7232CF7} = {4AA5F741-E48E-4DAF-BF15-4526EB0FD2ED}
 	EndGlobalSection
 EndGlobal
